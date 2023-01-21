@@ -61,7 +61,7 @@ main-build: lis3dh_stm32g0_example.elf secondary-outputs
 
 # Tool invocations
 lis3dh_stm32g0_example.elf lis3dh_stm32g0_example.map: $(OBJS) $(USER_OBJS) C:\Users\micha\STM32CubeIDE\workspace_1.11.0\lis3dh_stm32g0_example\STM32G071RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "lis3dh_stm32g0_example.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\micha\STM32CubeIDE\workspace_1.11.0\lis3dh_stm32g0_example\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lis3dh_stm32g0_example.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "lis3dh_stm32g0_example.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\micha\STM32CubeIDE\workspace_1.11.0\lis3dh_stm32g0_example\STM32G071RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lis3dh_stm32g0_example.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

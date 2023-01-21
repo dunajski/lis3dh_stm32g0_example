@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stm32g0xx_hal.h": "c",
+        "lis3dh_reg.h": "c",
+        "usart.h": "c",
+        "lis3dh_add.h": "c",
+        "stdio.h": "c",
+        "string.h": "c"
+    }
+}

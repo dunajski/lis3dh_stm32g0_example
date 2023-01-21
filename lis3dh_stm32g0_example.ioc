@@ -1,6 +1,6 @@
 #MicroXplorer Configuration settings - do not modify
-CAD.formats=
-CAD.pinconfig=
+CAD.formats=[]
+CAD.pinconfig=Dual
 CAD.provider=
 File.Version=6
 KeepUserPlacement=false
@@ -73,9 +73,11 @@ PA6.Mode=Full_Duplex_Master
 PA6.Signal=SPI1_MISO
 PA7.Mode=Full_Duplex_Master
 PA7.Signal=SPI1_MOSI
-PB0.GPIOParameters=GPIO_Label
+PB0.GPIOParameters=GPIO_Speed,PinState,GPIO_Label
 PB0.GPIO_Label=SPI1_CS
+PB0.GPIO_Speed=GPIO_SPEED_FREQ_VERY_HIGH
 PB0.Locked=true
+PB0.PinState=GPIO_PIN_SET
 PB0.Signal=GPIO_Output
 PC13.Locked=true
 PC13.Mode=SYS_WakeUp1
